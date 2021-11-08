@@ -1,0 +1,24 @@
+Pseudocodes:
+
+problem 3:
+
+output to user “please insert rectangle height”
+read input and store in variable height
+output to user “please insert rectangle width”
+read input and store in variable width
+set area = height * width
+set perimeter = (height+width)*2
+Print area and perimeter
+End program
+
+problem 4:
+
+Output to user “enter the distance you plan on driving”
+Read input and store in variable distance
+Output to user “enter the fuel efficiency of the car you will be using”
+Read input and store in variable fueleff
+Output to user “enter the price you pay per gallon of gas”
+Read input and store in variable gasprice
+Set totalcost = (distance/fueleff)*price
+Print totalcost
+End program

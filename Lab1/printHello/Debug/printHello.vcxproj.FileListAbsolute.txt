@@ -1,0 +1,2 @@
+C:\Users\iddos\Desktop\Langara Semester 1\CPSC 1155\Lab1\printHello\Debug\printHello.exe
+C:\Users\iddos\Desktop\Langara Semester 1\CPSC 1155\Lab1\printHello\Debug\printHello.pdb

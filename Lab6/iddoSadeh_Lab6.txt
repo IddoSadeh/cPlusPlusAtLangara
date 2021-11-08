@@ -1,0 +1,492 @@
+1.(Nested Loops) (a):
+No errors compiling.
+Trace Table: 
+i	j	x	output
+4	-	-	-
+4	0	-	-	
+4	1	4	-
+4	1	4	4 
+4	2	-	-
+4	3	12	-
+4	3	12	12 
+4	4	-	-
+4	-	-	4 
+5	0	-	-
+5	1	5	-
+5	1	5	5 
+5	2	-	-
+5	3	15	-	
+5	3	15	15 
+5	4	-	-
+5	-	-	5 
+6	0	-	-
+6	1	6	-
+6	1	6	6 
+6	2	-	-
+6	3	18	-
+6	3	18	18 
+6	4	-	-
+6	-	-	6
+7	-	-	- 
+
+(1b)
+No errors compiling.
+Trace Table:
+i	j	x	output
+4	-	-	-	
+4	0	-	-	
+4	1	4	-
+4	-	-	4
+5	-	-	-
+5	0	-	-
+5	1	5	-
+5	1	5	5
+5	2	-	-
+5	3	15	-
+5	3	15	15
+5	4	-	-
+5	-	-	5
+6	-	-	-
+6	0	-	-
+6	1	6	-
+6	1	6	6
+6	2	-	-
+6	3	18	-
+6	3	18	18
+6	4	-	-
+6	-	-	6
+7	-	-	-
+
+(1c)
+No errors compiling.
+Trace Table:
+i	j	x	output
+4	-	-	-
+4	0	-	-
+4	1	4	-
+4	2	-	-
+4	3	12	-
+4	3	12	12
+4	4	-	-
+4	-	-	4
+5	-	-	-
+5	0	-	-
+5	1	5	-
+5	2	-	-
+5	3	15	-
+5	3	15	15
+5	4	-	-
+5	-	-	5
+6	-	-	-
+6	0	-	-
+6	1	6	-
+6	1	6	6
+6	2	-	-
+6	3	18	-
+6	3	18	18
+6	4	-	-
+6	-	-	6
+7	-	-	-
+
+2. (functions)(a):
+Trace Table:
+k	f(k)	output
+5	-	-
+6	-	-
+6	6	-
+7	-	-
+7	7	-
+8	-	-
+8	8	-
+8	8	k is 8
+
+(2b):
+Trace Table:
+x1	x2	f()	p1	output
+-	-	-	-	compile error
+
+
+(2c):
+Trace Table:
+x1	x2	f1()	f2()	p1	p2	t	i	output
+-	-	-		-		-	-	-	-	-
+1	3	-		-		-	-	-	-	-
+1	3	-		-		1	3	-	-	-
+1	3	-		-		1	3	1	-	-
+3	3	-		-		3	3	1	-	-
+3	3	-		-		3	1	1	-	-
+4	3	-		-		4	1	1	4	-	
+4	3	-		-		4	2	1	2	-
+4	3	-		-		4	2	1	2	x1 is 4, x2 is 3
+
+
+
+
+(2d):
+Trace Table:
+i	f()	j	x	output
+1	-	-	-	-
+1	-	2	-	-
+1	-	2	1	-
+0	-	3	1	output = 3
+0	-	3	2	-
+-1	-	4	2	output = 0
+-1	-	4	3	-
+-2	-	5	3	output = -5
+-2	-	5	4	-
+2	-	-	-	- 
+2	-	3	-	-
+2	-	3	1	-
+1	-	4	1	output = 8
+1	-	4	2	-
+0	-	5	2	ouput = 5
+0	-	5	3	-
+-1	-	6	3	output = 0
+-1	-	6	4	-
+3	-	-	-	-
+3	-	4	-	-
+3	-	4	1	-
+2	-	5	1	ouput = 15
+2	-	5	2	-
+1	-	6	2	output = 12
+1	-	6	3	-
+0	-	7	3	output = 7
+0	-	7	4	-
+4	-	-	-	-
+
+(2e):
+Trace Table:
+i	f()	j	x	output
+6	-	-	-	-
+-	-	7	-	-
+6	-	7	1	-
+5	-	8	1	out = 48
+5	-	8	2	-
+4	-	9	2	out = 45
+4	-	9	3	-
+3	-	10	3	out = 40
+3	-	10	4	-
+4	-	-	-	-
+4	-	5	-	-
+4	-	5	1	-
+3	-	6	1	out = 24
+3	-	6	2	-
+2	-	7	2	out = 21
+2	-	7	3	-
+1	-	8	3	out = 16
+1	-	8	4	-
+2	-	-	-	-
+2	-	3	-	-
+2	-	3	1	-
+1	-	4	1	out = 8
+1	-	4	2	-
+0	-	5	2	out = 5
+0	-	5	3	-
+-1	-	6	3	out = 0
+-1	-	6	-4	-
+0	-	-	-	-
+
+
+(3a swap x1 and x2)
+corrected code: 
+int main()
+{
+int x1 = 1, x2 = 3, temp;
+temp = x2;
+x2 = x1;
+x1 = temp;
+}
+Trace Table:
+x1	x2	temp	
+1	3	-
+1	3	3
+1	1	3
+3	1	3
+
+(3b reverse a string)
+corrected code: 
+int main()
+{
+	string word = "abcdefgh";
+	int j;
+	for (int i = 1; i < (word.length() / 2)+1; i++)
+	{
+		j = word.length() - i;
+		swap(word[i-1], word[j]);
+	}
+}
+Trace Table:
+word		i	j
+abcdefgh	1	7
+hbcdefga	1	7
+hbcdefga	2	7
+hbcdefga	2	6
+hgcdefba	2	6
+hgcdefba	3	6
+hgcdefba	3	5
+hgfdecba	3	5
+hgfdecba	4	4
+hgfedcba	4	4
+
+(3c count the number of win/loss for one guess and 6 rolls of dice):
+corrected code:
+#include <iostream>
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
+using namespace std;
+
+int main() {
+    srand(time(0));
+    int guess, countLoss = 0, countWin = 0;
+    cin >> guess;
+    for (int i = 1; i <= 6; i++)
+    {
+        if ((1 + rand() % 6) == guess)
+            countWin++;
+        else 
+            countLoss++;
+    }
+    cout << countLoss << " " << countWin;
+    return 0;
+}
+
+(4  What is the printout of the following code? ):
+7
+5
+26
+10
+5
+26
+2
+25
+5
+
+(5 Search a String):
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+    string a, d;
+    char b;
+    int c = 0;
+    cout << "please enter string and characther to get back the indices the character occurs in the string: " << endl;
+    getline(cin, a);
+    cout << "now enter charachter: " << endl;
+    cin >> b;
+    d = b;
+    for (static int i = 0; i < a.length(); i++)
+    {
+        if (a[i] == b)
+        {
+            c++;
+            if (d.length() < 2)
+                d += " occurs at " + to_string(i);
+            else
+                d += " and " + to_string(i);
+
+        }
+
+    }
+    if (c == 0)
+    {
+        cout << "'" << b << "' does not exist in the string";
+        return 0;
+    }
+    cout << d;
+}
+
+
+(6 Search a String):
+#include <iostream>
+
+using namespace std;
+
+int searchString(string a, char b){
+  int c=0;
+  for(int i=0; i< a.length(); i++)
+  {
+    if (a[i]==b)
+    c++;
+  }
+  return c;
+}
+int main()
+{
+  string a;
+  char b;
+  cout << "please enter string and characther to get back number of times charachter appears in string, start with string: "<< endl;
+  getline(cin,a);
+  cout << "now enter charachter: "<< endl;
+  cin >> b;
+  if (searchString(a, b) != 0)
+  {
+    cout << "'"<<b<<"' " << "occurs " <<searchString(a, b)<< " times";
+  }
+else
+{
+  cout << "'"<<b<<"' does not exist in the string";
+}
+}
+
+(7 Largest and Smallest Character)
+
+#include <iostream>
+using namespace std;
+
+char largestChar(string a)
+{
+  char b;
+  for (int i=0; i<a.length();i++)
+  {
+    
+    if (a[i]>64 && a[i]<91)
+    {
+    a[i] +=32;
+    }
+    if (a[i]>b)
+    {
+      b= a[i];
+    }
+  }
+  return b;
+}
+char smallestChar(string a)
+{
+  char b='z';
+  for (int i=0; i<a.length();i++)
+  {
+    
+    if (a[i]>64 && a[i]<91)
+    {
+    a[i] +=32;
+    }
+    if (a[i]<b)
+    {
+      b= a[i];
+    }
+  }
+  return b;
+}
+
+
+int main() {
+  string a;
+  cout << "please enter a string, we will return the largest and smallest charachter"<< endl;
+  getline(cin, a);
+  for (int i = 0 ; i < a.length(); i++)
+  {
+     if (a[i]>64 && a[i]<91)
+    {
+    a[i] +=32;
+    }
+  }
+  cout << largestChar(a) << " is the largest number"<< endl;
+  cout << smallestChar(a) << " is the smallest number"<< endl;
+  
+  
+}
+
+(8 string of digits)
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int sumString(string a)
+{
+	int b = 0;
+	int c = stoi(a);
+	while (c != 0)
+	{
+		b += c % 10;
+		c = c / 10;
+	}
+	return b;
+}
+
+int sumOfOdds(string a)
+{
+	int b = 0;
+	int c = stoi(a);
+	while (c != 0)
+	{
+		if (sizeof(c) % 2 == 0) {
+			b += c % 10;
+			c = c / 100;
+			
+		}
+		else
+		{
+			c = c / 10;
+			b += c % 10;
+		}
+	}
+	return b;
+}
+
+int sumOfEvens(string a)
+{
+	int b = 0;
+	int c = stoi(a);
+	while (c != 0)
+	{
+		if (sizeof(c) % 2 == 0) {
+			c = c / 10;
+		}
+		b += c % 10;
+		c = c / 10;
+	}
+	return b;
+}
+int main()
+{
+	string a;
+	cout << " Please enter a number, we will return the sum of all the digits, sum of all the odd indiced digits and all the even indiced digits: " << endl;
+	cin >> a;
+	for (int i = 0; i < a.length(); i++)
+	{
+		if (a[i] < 48 || a[i]> 57)
+		{
+			cout << " your input is invalid, not all the charachters are digits";
+			return 0;
+		}
+	}
+	cout << "Sum of digits is " << sumString(a) << endl;
+	cout << "Sum of digits at odd indices is " << sumOfOdds(a) << endl;
+	cout << "Sum of digits at even indices is " << sumOfEvens(a) << endl;
+}
+(9 shift all charachters)
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string shiftRight(string a) {
+    string result;
+    result += a[a.size() - 1];
+    for (int i = 0; i < a.size() - 1; ++i) {
+        result += a[i];
+    }
+    return result;
+}
+
+string shiftLeft(string a) {
+    string result;
+    for (int i = 1; i < a.size(); ++i) {
+        result += a[i];
+    }
+    result += a[0];
+    return result;
+}
+
+int main() {
+    string a;
+    cout << "Enter a string: ";
+    cin >> a;
+    cout << "String after shift right: " << shiftRight(a) << endl;
+    cout << "String after shift left: " << shiftLeft(a) << endl;
+    return 0;
+}

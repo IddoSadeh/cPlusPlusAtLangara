@@ -1,0 +1,47 @@
+
+1. Phone Key Pads
+
+function that gets charachter inputed
+translate cahrachter to number according to international standard of letter/number mapping on phone
+return appropraite number
+output to user instructions
+check validity of input
+if input invalid ask user for new input
+repeat until valid input
+call function with user input
+print result	
+
+3. student major and status  
+
+input letter and number
+check if letter and number are in valid range
+ask for new input if necessary
+crossrefrance input with data
+output data
+
+5. Find the max grade
+
+input file
+declare 3 variables
+put numbers from file in variable
+check variable size compared to previous number called and save largest number
+add every number to string
+output largest number and string 
+
+7. Find numbers divisible by 3 or 6, but not both
+
+define int variable counter = 300
+define counter = 0
+before each out put check that number is divisble 6 (everynumber divisble by 6 is also divisble by 3, opposite is not true) 
+if true dont print
+add 3 to output every loop
+check if statement
+after every 5 outputs end line
+continue until output is 399
+
+9. Check Student ID
+
+get number as input
+check if number is valid
+number is valid if it starts with a digit, is exactly 10 digits/letters, onyl digits or letter
+return whether number is valid or not

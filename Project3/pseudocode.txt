@@ -1,0 +1,16 @@
+4. emirp.cpp
+
+run loop 
+check if number is not palindrome, prime and if its reversal is prime
+print in this case
+continue loop for 100 outputs
+
+7. decimal_to_binary.cpp
+
+take number
+create string
+run loop
+if number divisble by 2 with no reminder first add 0 to front of string
+else add 1 to front of string
+divide number by 2 
+repeat until number equals 0
